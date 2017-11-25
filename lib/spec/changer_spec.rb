@@ -33,4 +33,7 @@ describe Changer do
   it "returns 2 dimes and 4 pennies for 24" do
     expect(changer.change(24)).to eq([10,10,1,1,1,1])
   end
+  it "returns 3 quarters 2 dimes and 4 pennies for 99" do
+    expect(changer.change(99)).to eq([25,25,25,10,10,1,1,1,1])
+  end
 end

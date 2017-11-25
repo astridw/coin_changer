@@ -12,4 +12,7 @@ describe Changer do
   it "returns 2 pennies for 3 pennies" do
     expect(changer.change(3)).to eq([1,1,1])
   end
+  it "returns 1 nickel for 5" do
+    expect(changer.change(5)).to eq([5])
+  end
 end
